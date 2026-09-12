@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_pickaxe",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_axe",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_hoe",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_shovel",
+          "modifier": "mechanics:set_max_stack_size"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/toolsmith_gift"
+}

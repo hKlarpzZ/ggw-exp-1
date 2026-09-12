@@ -1,0 +1,16 @@
+{
+  "gives": {
+    "count": 1,
+    "id": "minecraft:iron_leggings",
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    }
+  },
+  "max_uses": 12,
+  "reputation_discount": 0.2,
+  "wants": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  }
+}

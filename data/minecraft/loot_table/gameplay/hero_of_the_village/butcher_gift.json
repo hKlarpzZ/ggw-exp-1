@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_rabbit",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_chicken",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_porkchop",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_beef",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cooked_mutton",
+          "modifier": "mechanics:set_max_stack_size"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/butcher_gift"
+}

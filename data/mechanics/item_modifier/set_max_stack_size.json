@@ -9,7 +9,8 @@
     {
       "type": "minecraft:set_components",
       "components": {
-        "minecraft:max_stack_size": 1
+        "minecraft:max_stack_size": 1,
+        "minecraft:bundle_contents": []
       }
     }
   ]

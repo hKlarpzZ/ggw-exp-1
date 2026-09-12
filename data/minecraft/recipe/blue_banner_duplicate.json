@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_special_bannerduplicate",
+  "banner": "minecraft:blue_banner",
+  "result": {
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    },
+    "count": 1,
+    "id": "minecraft:blue_banner"
+  }
+}

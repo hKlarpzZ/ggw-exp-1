@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_special_firework_star",
+  "dye": "#minecraft:dyes",
+  "fuel": "minecraft:gunpowder",
+  "result": {
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    },
+    "count": 1,
+    "id": "minecraft:firework_star"
+  },
+  "shapes": {
+    "burst": "minecraft:feather",
+    "creeper": "#minecraft:skulls",
+    "large_ball": "minecraft:fire_charge",
+    "star": "minecraft:gold_nugget"
+  },
+  "trail": "minecraft:diamond",
+  "twinkle": "minecraft:glowstone_dust"
+}

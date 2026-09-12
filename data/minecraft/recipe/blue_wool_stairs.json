@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "woolen_stairs",
+  "key": {
+    "#": "minecraft:blue_wool"
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    },
+    "count": 1,
+    "id": "minecraft:blue_wool_stairs"
+  }
+}

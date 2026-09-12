@@ -1,0 +1,264 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 26,
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:swiftness"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:slowness"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:strength"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:healing"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:harming"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:leaping"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:regeneration"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:fire_resistance"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:water_breathing"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:invisibility"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:night_vision"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:weakness"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 1,
+                "min": 0
+              }
+            },
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:poison"
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:tipped_arrow"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/hero_of_the_village/fletcher_gift"
+}

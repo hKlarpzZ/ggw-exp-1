@@ -1,0 +1,16 @@
+{
+  "gives": {
+    "count": 1,
+    "id": "minecraft:horn_coral_block",
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    }
+  },
+  "max_uses": 8,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  }
+}

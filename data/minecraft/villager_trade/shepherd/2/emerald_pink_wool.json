@@ -1,0 +1,17 @@
+{
+  "gives": {
+    "count": 1,
+    "id": "minecraft:pink_wool",
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    }
+  },
+  "max_uses": 16,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  },
+  "xp": 5
+}

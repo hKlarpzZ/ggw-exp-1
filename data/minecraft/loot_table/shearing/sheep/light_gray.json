@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:shearing",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:light_gray_wool",
+          "modifier": "mechanics:set_max_stack_size"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3,
+        "min": 1
+      }
+    }
+  ],
+  "random_sequence": "minecraft:shearing/sheep/light_gray"
+}

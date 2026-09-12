@@ -1,0 +1,113 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:cod",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:salmon"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:water_bucket"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:barrel"
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:wheat_seeds",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 3,
+                "min": 1
+              }
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:coal",
+          "weight": 2
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5,
+        "min": 1
+      }
+    }
+  ],
+  "random_sequence": "minecraft:chests/village/village_fisher"
+}

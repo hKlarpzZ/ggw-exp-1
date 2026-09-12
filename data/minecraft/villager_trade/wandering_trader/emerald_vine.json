@@ -1,0 +1,15 @@
+{
+  "gives": {
+    "count": 1,
+    "id": "minecraft:vine",
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    }
+  },
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  }
+}

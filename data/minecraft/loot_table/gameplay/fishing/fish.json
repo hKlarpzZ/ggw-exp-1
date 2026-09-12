@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+          "weight": 60,
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 25,
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 2,
+          "modifier": "mechanics:set_max_stack_size"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "weight": 13,
+          "modifier": "mechanics:set_max_stack_size"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/fish"
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 200,
+  "experience": 0.15,
+  "ingredient": "#minecraft:logs_that_burn",
+  "result": {
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    },
+    "count": 1,
+    "id": "minecraft:charcoal"
+  }
+}

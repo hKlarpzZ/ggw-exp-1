@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block_interact",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 3
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:honeycomb"
+        }
+      ],
+      "rolls": 3
+    }
+  ],
+  "random_sequence": "minecraft:harvest/beehive"
+}

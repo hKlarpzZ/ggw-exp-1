@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 1
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:pufferfish"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "condition": {
+        "type": "minecraft:random_chance",
+        "chance": 0.05
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone_meal",
+          "modifier": "mechanics:set_max_stack_size"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:entities/pufferfish"
+}

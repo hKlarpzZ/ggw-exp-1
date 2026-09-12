@@ -1,0 +1,43 @@
+{
+  "given_item_modifier": [
+    {
+      "type": "minecraft:enchant_with_levels",
+      "include_additional_cost_component": true,
+      "levels": {
+        "type": "minecraft:uniform",
+        "max": 19,
+        "min": 5
+      },
+      "options": "#minecraft:on_traded_equipment"
+    },
+    {
+      "type": "minecraft:filtered",
+      "item_filter": {
+        "items": "minecraft:diamond_chestplate",
+        "predicates": {
+          "minecraft:enchantments": [
+            {}
+          ]
+        }
+      },
+      "on_fail": {
+        "type": "minecraft:discard"
+      }
+    }
+  ],
+  "gives": {
+    "count": 1,
+    "id": "minecraft:diamond_chestplate",
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    }
+  },
+  "max_uses": 3,
+  "reputation_discount": 0.2,
+  "wants": {
+    "count": 1,
+    "id": "minecraft:emerald"
+  },
+  "xp": 30
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block_interact",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 4
+            },
+            "mechanics:set_max_stack_size"
+          ],
+          "name": "minecraft:pumpkin_seeds"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:carve/pumpkin"
+}

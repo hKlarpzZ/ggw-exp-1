@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "condition": "minecraft:tool/can_silk_touch",
+              "name": "minecraft:campfire",
+              "modifier": "mechanics:set_max_stack_size"
+            },
+            {
+              "type": "minecraft:item",
+              "condition": {
+                "type": "minecraft:survives_explosion"
+              },
+              "modifier": [
+                {
+                  "type": "minecraft:set_count",
+                  "count": 2
+                },
+                "mechanics:set_max_stack_size"
+              ],
+              "name": "minecraft:charcoal"
+            }
+          ]
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:blocks/campfire"
+}

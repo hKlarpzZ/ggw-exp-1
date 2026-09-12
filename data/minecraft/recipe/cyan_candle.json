@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "dyed_candle",
+  "ingredients": [
+    "minecraft:candle",
+    "minecraft:cyan_dye"
+  ],
+  "result": {
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    },
+    "count": 1,
+    "id": "minecraft:cyan_candle"
+  }
+}

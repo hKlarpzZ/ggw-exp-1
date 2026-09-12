@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "coal",
+  "ingredient": "minecraft:deepslate_coal_ore",
+  "result": {
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:bundle_contents": []
+    },
+    "count": 1,
+    "id": "minecraft:coal"
+  }
+}

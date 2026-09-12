@@ -1,0 +1,18 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrier"
+    },
+    "title": "mechanics root",
+    "description": "",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "minecraft:block/allium"
+  },
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}
