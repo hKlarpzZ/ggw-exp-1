@@ -7,7 +7,7 @@
   "given_item_modifier": [
     {
       "type": "minecraft:enchant_randomly",
-      "include_additional_cost_component": true,
+      "include_additional_cost_component": false,
       "only_compatible": false,
       "options": "#minecraft:tradeable"
     },

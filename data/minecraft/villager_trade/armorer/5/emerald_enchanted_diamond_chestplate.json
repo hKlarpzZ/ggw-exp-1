@@ -2,7 +2,7 @@
   "given_item_modifier": [
     {
       "type": "minecraft:enchant_with_levels",
-      "include_additional_cost_component": true,
+      "include_additional_cost_component": false,
       "levels": {
         "type": "minecraft:uniform",
         "max": 19,
