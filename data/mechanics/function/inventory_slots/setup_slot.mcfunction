@@ -6,5 +6,5 @@ execute as @a unless predicate mechanics:slot_empty at @s run function mechanics
 execute as @a run item replace entity @s enderchest.26 with minecraft:air
 
 ## setup locked slot
-$item replace entity @a inventory.$(slot) with minecraft:paper[minecraft:item_model="minecraft:iron_bars"]
+$item replace entity @a inventory.$(slot) with minecraft:command_block[minecraft:item_model="minecraft:white_stained_glass_pane"]
 $item modify entity @a inventory.$(slot) mechanics:locker

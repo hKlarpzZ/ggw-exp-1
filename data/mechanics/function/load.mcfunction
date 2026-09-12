@@ -1,6 +1,4 @@
-tellraw @a 'aboba'
+tellraw @a ["",{"text":"Successfully initialized ","color":"white"},{"text":"ggw experiment 1","bold":true,"color":"dark_aqua"},{"text":" datapack!","color":"white"},{"text":"\n"},{"text":"Made by ","color":"gray"},{"text":"hKlarpzZ","bold":true,"color":"dark_red","clickEvent":{"action":"open_url","value":"https://www.youtube.com/@hKlarpzZ"},"hoverEvent":{"action":"show_text","contents":"Youtube"}}]
 
-data modify storage hotbar_slots:data list set value []
-# 0, 1, 2, 3, 5, 6, 7, 8
-data modify storage inventory_slots:data list set value []
-# 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26
+data modify storage hotbar_slots:data list set value [0, 1, 2, 3, 5, 6, 7, 8]
+data modify storage inventory_slots:data list set value [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
