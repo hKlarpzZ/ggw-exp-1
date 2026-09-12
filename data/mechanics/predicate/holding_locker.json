@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "player.cursor": {
+        "components": {
+          "minecraft:custom_data": {
+            "locker": true
+          }
+        }
+      }
+    }
+  }
+}

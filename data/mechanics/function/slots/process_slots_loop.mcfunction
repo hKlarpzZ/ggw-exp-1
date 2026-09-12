@@ -1,0 +1,1 @@
+execute if data storage current_hotbar_slots:data list[0] run function mechanics:slots/process_one_slot

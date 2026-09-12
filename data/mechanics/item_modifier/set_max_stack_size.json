@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type": "minecraft:set_count",
+      "count": 1,
+      "add": false
+    },
+    {
+      "type": "minecraft:set_components",
+      "components": {
+        "minecraft:max_stack_size": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+execute if data storage current_inventory_slots:data list[0] run function mechanics:inventory_slots/process_one_slot

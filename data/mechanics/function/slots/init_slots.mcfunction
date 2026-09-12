@@ -1,0 +1,1 @@
+data modify storage current_hotbar_slots:data list set from storage hotbar_slots:data list

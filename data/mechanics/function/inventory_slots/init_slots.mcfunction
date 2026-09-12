@@ -1,0 +1,1 @@
+data modify storage current_inventory_slots:data list set from storage inventory_slots:data list

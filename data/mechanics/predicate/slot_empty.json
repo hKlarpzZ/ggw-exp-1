@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "minecraft:slots": {
+      "enderchest.26": {
+        "components": {
+          "minecraft:custom_data": {
+            "locker": true
+          }
+        }
+      }
+    }
+  }
+}
