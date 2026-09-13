@@ -5,24 +5,34 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "condition": {
-            "type": "minecraft:all_of",
-            "terms": [
-              {
-                "type": "minecraft:survives_explosion"
-              },
-              {
-                "type": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {}
-              }
-            ]
-          },
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {}
+            }
+          ],
           "name": "minecraft:chorus_flower",
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/chorus_flower"

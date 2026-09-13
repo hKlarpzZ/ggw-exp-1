@@ -8,50 +8,95 @@
           "children": [
             {
               "type": "minecraft:item",
-              "condition": {
-                "type": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "minecraft:components": {
-                    "minecraft:chicken/variant": "minecraft:temperate"
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:components": {
+                      "minecraft:chicken/variant": "minecraft:temperate"
+                    }
                   }
                 }
-              },
+              ],
               "name": "minecraft:egg",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "condition": {
-                "type": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "minecraft:components": {
-                    "minecraft:chicken/variant": "minecraft:warm"
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:components": {
+                      "minecraft:chicken/variant": "minecraft:warm"
+                    }
                   }
                 }
-              },
+              ],
               "name": "minecraft:brown_egg",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "condition": {
-                "type": "minecraft:entity_properties",
-                "entity": "this",
-                "predicate": {
-                  "minecraft:components": {
-                    "minecraft:chicken/variant": "minecraft:cold"
+              "conditions": [
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "minecraft:components": {
+                      "minecraft:chicken/variant": "minecraft:cold"
+                    }
                   }
                 }
-              },
+              ],
               "name": "minecraft:blue_egg",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             }
           ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:gameplay/chicken_lay"

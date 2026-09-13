@@ -8,36 +8,69 @@
           "children": [
             {
               "type": "minecraft:item",
-              "condition": "minecraft:tool/can_shear",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": "minecraft:shears"
+                  }
+                }
+              ],
               "name": "minecraft:short_grass",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "condition": {
-                "type": "minecraft:random_chance",
-                "chance": 0.125
-              },
-              "modifier": [
+              "conditions": [
                 {
-                  "type": "minecraft:apply_bonus",
+                  "chance": 0.125,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:uniform_bonus_count",
+                  "function": "minecraft:apply_bonus",
                   "parameters": {
                     "bonusMultiplier": 2
                   }
                 },
                 {
-                  "type": "minecraft:explosion_decay"
+                  "function": "minecraft:explosion_decay"
                 },
-                "mechanics:set_max_stack_size"
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
               ],
               "name": "minecraft:wheat_seeds"
             }
           ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/short_grass"

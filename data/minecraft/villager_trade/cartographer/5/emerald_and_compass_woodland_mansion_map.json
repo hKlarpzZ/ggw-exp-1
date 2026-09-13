@@ -3,37 +3,45 @@
     "count": 1,
     "id": "minecraft:compass"
   },
-  "given_item_modifier": [
+  "given_item_modifiers": [
     {
-      "type": "minecraft:exploration_map",
-      "destination": "#minecraft:on_woodland_mansion_maps",
+      "destination": "minecraft:on_woodland_explorer_maps",
+      "function": "minecraft:exploration_map",
       "search_radius": 100
     },
     {
-      "type": "minecraft:filtered",
+      "function": "minecraft:set_name",
+      "name": {
+        "translate": "filled_map.mansion"
+      },
+      "target": "item_name"
+    },
+    {
+      "function": "minecraft:filtered",
       "item_filter": {
+        "items": "minecraft:filled_map",
         "predicates": {
           "minecraft:map_id": {}
         }
       },
       "on_fail": {
-        "type": "minecraft:discard"
+        "function": "minecraft:discard"
       }
     }
   ],
   "gives": {
     "count": 1,
-    "id": "minecraft:woodland_mansion_map",
+    "id": "minecraft:map",
     "components": {
       "minecraft:max_stack_size": 1,
       "minecraft:bundle_contents": []
     }
   },
-  "max_uses": 12,
+  "max_uses": 12.0,
   "reputation_discount": 0.2,
   "wants": {
     "count": 1,
     "id": "minecraft:emerald"
   },
-  "xp": 30
+  "xp": 30.0
 }

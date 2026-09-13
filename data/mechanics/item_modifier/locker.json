@@ -1,5 +1,4 @@
 {
-  "type": "minecraft:set_components",
   "components": {
     "minecraft:custom_name": {
       "text": ""
@@ -16,5 +15,6 @@
       "locker": true
     },
     "minecraft:max_stack_size": 1
-  }
+  },
+  "function": "minecraft:set_components"
 }

@@ -5,131 +5,167 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond_block"
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:emerald_block",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:set_damage",
               "damage": {
                 "type": "minecraft:uniform",
                 "max": 0.5,
                 "min": 0.1
-              }
+              },
+              "function": "minecraft:set_damage"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond_axe",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:set_damage",
               "damage": {
                 "type": "minecraft:uniform",
                 "max": 0.5,
                 "min": 0.1
-              }
+              },
+              "function": "minecraft:set_damage"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond_pickaxe",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond",
           "weight": 10
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:cake",
           "weight": 20
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 20,
-                "min": 8
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:amethyst_shard",
           "weight": 20
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:iron_block",
           "weight": 20
@@ -137,8 +173,8 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 3,
-        "min": 1
+        "max": 3.0,
+        "min": 1.0
       }
     }
   ],

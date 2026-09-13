@@ -11,11 +11,11 @@
       "minecraft:bundle_contents": []
     }
   },
-  "max_uses": 16,
+  "max_uses": 16.0,
   "reputation_discount": 0.05,
   "wants": {
     "count": 1,
     "id": "minecraft:salmon"
   },
-  "xp": 5
+  "xp": 5.0
 }

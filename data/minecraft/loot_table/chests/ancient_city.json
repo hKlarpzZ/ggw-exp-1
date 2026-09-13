@@ -5,117 +5,167 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:enchanted_golden_apple"
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_otherside",
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:compass",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 2,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:sculk_catalyst",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:set_damage",
               "damage": {
                 "type": "minecraft:uniform",
                 "max": 1.0,
                 "min": 0.8
-              }
+              },
+              "function": "minecraft:set_damage"
             },
             {
-              "type": "minecraft:enchant_with_levels",
+              "function": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
-                "max": 50,
-                "min": 30
+                "max": 50.0,
+                "min": 30.0
               },
               "options": "#minecraft:on_random_loot"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond_hoe",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:lead",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": 1
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond_horse_armor",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:leather",
           "weight": 2
@@ -124,280 +174,389 @@
           "type": "minecraft:item",
           "name": "minecraft:music_disc_13",
           "weight": 2,
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_cat",
           "weight": 2,
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:enchant_with_levels",
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
-                "max": 50,
-                "min": 30
+                "max": 50.0,
+                "min": 30.0
               },
               "options": "#minecraft:on_random_loot"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:diamond_leggings",
           "weight": 2
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:enchant_randomly",
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
               "options": "minecraft:swift_sneak"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:book",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 10,
-                "min": 4
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:sculk",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:sculk_sensor",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 4,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:candle",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 15,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:amethyst_shard",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:experience_bottle",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 15,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:glow_berries",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:enchant_with_levels",
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
               "levels": {
                 "type": "minecraft:uniform",
-                "max": 39,
-                "min": 20
+                "max": 39.0,
+                "min": 20.0
               },
               "options": "#minecraft:on_random_loot"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:iron_leggings",
           "weight": 3
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:echo_shard",
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:disc_fragment_5",
           "weight": 4
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 3,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:set_potion",
+              "function": "minecraft:set_potion",
               "id": "minecraft:strong_regeneration"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:potion",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:enchant_randomly",
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:enchant_randomly",
               "options": "#minecraft:on_random_loot"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:book",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 10,
-                "min": 3
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:book",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 15,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:bone",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 15,
-                "min": 1
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:soul_torch",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 15,
-                "min": 6
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:coal",
           "weight": 7
@@ -405,8 +564,8 @@
       ],
       "rolls": {
         "type": "minecraft:uniform",
-        "max": 10,
-        "min": 5
+        "max": 10.0,
+        "min": 5.0
       }
     },
     {
@@ -419,15 +578,41 @@
           "type": "minecraft:item",
           "name": "minecraft:ward_armor_trim_smithing_template",
           "weight": 4,
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:silence_armor_trim_smithing_template",
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:chests/ancient_city"

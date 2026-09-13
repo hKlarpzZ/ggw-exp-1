@@ -5,33 +5,59 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:explosion_decay"
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:explosion_decay"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:composter"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     },
     {
-      "condition": {
-        "type": "minecraft:match_block",
-        "blocks": "minecraft:composter",
-        "state": {
-          "level": "8"
+      "conditions": [
+        {
+          "block": "minecraft:composter",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "level": "8"
+          }
         }
-      },
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:bone_meal",
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/composter"

@@ -5,49 +5,64 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "condition": {
-                "type": "minecraft:match_block",
-                "blocks": "minecraft:purple_candle",
-                "state": {
-                  "candles": "2"
+              "conditions": [
+                {
+                  "block": "minecraft:purple_candle",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candles": "2"
+                  }
                 }
-              },
-              "count": 2
+              ],
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:set_count",
-              "condition": {
-                "type": "minecraft:match_block",
-                "blocks": "minecraft:purple_candle",
-                "state": {
-                  "candles": "3"
+              "conditions": [
+                {
+                  "block": "minecraft:purple_candle",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candles": "3"
+                  }
                 }
-              },
-              "count": 3
+              ],
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:set_count",
-              "condition": {
-                "type": "minecraft:match_block",
-                "blocks": "minecraft:purple_candle",
-                "state": {
-                  "candles": "4"
+              "conditions": [
+                {
+                  "block": "minecraft:purple_candle",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "candles": "4"
+                  }
                 }
-              },
-              "count": 4
+              ],
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:explosion_decay"
+              "function": "minecraft:explosion_decay"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:purple_candle"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/purple_candle"

@@ -6,14 +6,27 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:slime_ball",
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         },
         {
           "type": "minecraft:empty",
           "weight": 699
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:gameplay/panda_sneeze"

@@ -5,24 +5,29 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "count": {
-                "type": "minecraft:binomial",
-                "n": 3,
-                "p": 0.53333336
-              }
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:pumpkin_seeds"
         }
       ],
-      "modifier": {
-        "type": "minecraft:explosion_decay"
-      },
-      "rolls": 1
+      "functions": [
+        {
+          "function": "minecraft:explosion_decay"
+        }
+      ],
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/attached_pumpkin_stem"

@@ -8,29 +8,69 @@
           "children": [
             {
               "type": "minecraft:item",
-              "condition": "minecraft:tool/can_silk_touch",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
               "name": "minecraft:gold_ore",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
-              "modifier": [
+              "functions": [
                 {
-                  "type": "minecraft:apply_bonus",
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
                   "enchantment": "minecraft:fortune",
-                  "formula": "minecraft:ore_drops"
+                  "formula": "minecraft:ore_drops",
+                  "function": "minecraft:apply_bonus"
                 },
                 {
-                  "type": "minecraft:explosion_decay"
+                  "function": "minecraft:explosion_decay"
                 },
-                "mechanics:set_max_stack_size"
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
               ],
               "name": "minecraft:raw_gold"
             }
           ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/gold_ore"

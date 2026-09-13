@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_transmute",
   "add_material_count_to_result": true,
   "group": "map_cloning",
-  "input": "#minecraft:clonable_maps",
+  "input": "minecraft:filled_map",
   "material": "minecraft:map",
   "material_count": {
     "max": 8,
@@ -13,6 +13,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:bundle_contents": []
     },
-    "count": 1
+    "count": 1,
+    "id": "minecraft:filled_map"
   }
 }

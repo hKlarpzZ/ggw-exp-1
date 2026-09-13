@@ -5,27 +5,36 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:set_count",
-              "condition": {
-                "type": "minecraft:match_block",
-                "blocks": "minecraft:purpur_slab",
-                "state": {
-                  "type": "double"
+              "conditions": [
+                {
+                  "block": "minecraft:purpur_slab",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "double"
+                  }
                 }
-              },
-              "count": 2
+              ],
+              "count": 1,
+              "function": "minecraft:set_count",
+              "add": false
             },
             {
-              "type": "minecraft:explosion_decay"
+              "function": "minecraft:explosion_decay"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:purpur_slab"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/purpur_slab"

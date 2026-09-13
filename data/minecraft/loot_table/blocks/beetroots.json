@@ -1,8 +1,10 @@
 {
   "type": "minecraft:block",
-  "modifier": {
-    "type": "minecraft:explosion_decay"
-  },
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ],
   "pools": [
     {
       "entries": [
@@ -11,53 +13,94 @@
           "children": [
             {
               "type": "minecraft:item",
-              "condition": {
-                "type": "minecraft:match_block",
-                "blocks": "minecraft:beetroots",
-                "state": {
-                  "age": "3"
+              "conditions": [
+                {
+                  "block": "minecraft:beetroots",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "age": "3"
+                  }
                 }
-              },
+              ],
               "name": "minecraft:beetroot",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             },
             {
               "type": "minecraft:item",
               "name": "minecraft:beetroot_seeds",
-              "modifier": "mechanics:set_max_stack_size"
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 1,
+                  "add": false
+                },
+                {
+                  "function": "minecraft:set_components",
+                  "components": {
+                    "minecraft:max_stack_size": 1,
+                    "minecraft:bundle_contents": []
+                  }
+                }
+              ]
             }
           ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     },
     {
-      "condition": {
-        "type": "minecraft:match_block",
-        "blocks": "minecraft:beetroots",
-        "state": {
-          "age": "3"
+      "conditions": [
+        {
+          "block": "minecraft:beetroots",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "age": "3"
+          }
         }
-      },
+      ],
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:apply_bonus",
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
               "enchantment": "minecraft:fortune",
               "formula": "minecraft:binomial_with_bonus_count",
+              "function": "minecraft:apply_bonus",
               "parameters": {
                 "extra": 3,
                 "probability": 0.5714286
               }
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:beetroot_seeds"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:blocks/beetroots"

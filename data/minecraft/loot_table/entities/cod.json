@@ -5,61 +5,89 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "modifier": [
+          "functions": [
             {
-              "type": "minecraft:furnace_smelt",
-              "condition": {
-                "type": "minecraft:any_of",
-                "terms": [
-                  {
-                    "type": "minecraft:entity_properties",
-                    "entity": "this",
-                    "predicate": {
-                      "minecraft:flags": {
-                        "is_on_fire": true
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "minecraft:flags": {
+                          "is_on_fire": true
+                        }
                       }
-                    }
-                  },
-                  {
-                    "type": "minecraft:entity_properties",
-                    "entity": "direct_attacker",
-                    "predicate": {
-                      "minecraft:equipment": {
-                        "mainhand": {
-                          "predicates": {
-                            "minecraft:enchantments": [
-                              {
-                                "enchantments": "#minecraft:smelts_loot"
-                              }
-                            ]
+                    },
+                    {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "direct_attacker",
+                      "predicate": {
+                        "minecraft:equipment": {
+                          "mainhand": {
+                            "predicates": {
+                              "minecraft:enchantments": [
+                                {
+                                  "enchantments": "#minecraft:smelts_loot"
+                                }
+                              ]
+                            }
                           }
                         }
                       }
                     }
-                  }
-                ]
-              }
+                  ]
+                }
+              ],
+              "function": "minecraft:furnace_smelt"
             },
-            "mechanics:set_max_stack_size"
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
           ],
           "name": "minecraft:cod"
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     },
     {
-      "condition": {
-        "type": "minecraft:random_chance",
-        "chance": 0.05
-      },
+      "conditions": [
+        {
+          "chance": 0.05,
+          "condition": "minecraft:random_chance"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:bone_meal",
-          "modifier": "mechanics:set_max_stack_size"
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1,
+              "add": false
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1,
+                "minecraft:bundle_contents": []
+              }
+            }
+          ]
         }
       ],
-      "rolls": 1
+      "rolls": 1.0
     }
   ],
   "random_sequence": "minecraft:entities/cod"
